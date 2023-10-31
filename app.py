@@ -20,8 +20,8 @@ def communicate():
         messages=messages
     )
 
-#   bot_message = response["choices"][0]["message"]
-    bot_message = responseresponse.choices[0].message
+    bot_message = response["choices"][0]["message"]
+#   bot_message = response.choices[0].message
     messages.append(bot_message)
 
     st.session_state["user_input"] = ""
